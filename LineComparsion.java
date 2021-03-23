@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class LineComparision {
+public class LineComparsion {
 	
 	public static void main(String args[]) {
 	
