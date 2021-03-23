@@ -29,8 +29,10 @@ public class LineComparsion {
 		if(Double.compare(Lenght1,Lenght2)==0)
 		
 			System.out.println("Length of Line 1 = Lenght of Line 2");
+		else if(Double.compare(Lenght1,Lenght2)<0)
+			System.out.println("Length of Line 1 < Lenght of Line 2");
 		else
-			System.out.println("Length of Line 1 != Lenght of Line 2");
+			System.out.println("Length of Line 1 > Lenght of Line 2");
 	}
 		
 }
