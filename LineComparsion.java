@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class LineComparsion {
 	
 	public static void main(String args[]) {
@@ -25,14 +24,15 @@ public class LineComparsion {
 		
 		double Lenght2 = Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
 		System.out.println("Length of Line2 : "+Lenght2) ;
+			
+		String Length_Line1 = String.valueOf(Lenght1);
+		String Length_Line2 = String.valueOf(Lenght2);
 		
-		if(Double.compare(Lenght1,Lenght2)==0)
+		System.out.println("Comparision of Line1 & Line2 = " +Length_Line1.compareTo(Length_Line2));
 		
-			System.out.println("Length of Line 1 = Lenght of Line 2");
-		else if(Double.compare(Lenght1,Lenght2)<0)
-			System.out.println("Length of Line 1 < Lenght of Line 2");
-		else
-			System.out.println("Length of Line 1 > Lenght of Line 2");
+		
+		
 	}
 		
 }
+
