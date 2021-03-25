@@ -1,6 +1,9 @@
+package linecomparision;
+
 import java.util.Scanner;
 
-public class LineComparsion {
+
+public class LineComparision {
 	
 	public static void main(String args[]) {
 	
@@ -28,11 +31,22 @@ public class LineComparsion {
 		String Length_Line1 = String.valueOf(Lenght1);
 		String Length_Line2 = String.valueOf(Lenght2);
 		
-		System.out.println("Comparision of Line1 & Line2 = " +Length_Line1.compareTo(Length_Line2));
-		
+		int comparision=Length_Line1.compareTo(Length_Line2);
+		System.out.println("Comparision of Line1 & Line2 = " +comparision);
+		if(comparision==0)
+		{
+			System.out.println("Lenght of Line1 "+Lenght1+" is equal to Lenght of Line2 "+Lenght2 );
+		}
+		else if(comparision<0)
+		{
+			System.out.println("Lenght of Line1 "+Lenght1+" is less than Lenght of Line2 "+Lenght2 );
+		}
+		else
+		{
+			System.out.println("Lenght of Line1 = "+Lenght1+" is greater than Lenght of Line2 = "+Lenght2 );
+		}
 		
 		
 	}
 		
 }
-
